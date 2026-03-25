@@ -23,6 +23,9 @@ BridgeConfig.FrameWork = "qbx_core"
         - ox_inventory
         - origen_inventory
         - tgiann-inventory
+        - qb-inventory
+        - jaksam_inventory
+        - codem-inventory
 ]]
 ---@type AvailableInventories
 BridgeConfig.Inventory = "ox_inventory"

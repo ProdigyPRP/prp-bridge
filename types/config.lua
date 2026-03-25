@@ -2,7 +2,7 @@
 
 ---@alias AvailableFrameworks 'qbx_core' | 'qb-core' | 'es_extended' | 'nd_core'
 
----@alias AvailableInventories 'ox_inventory' | 'qb-inventory' | 'origen_inventory' | 'tgiann-inventory'
+---@alias AvailableInventories 'ox_inventory' | 'qb-inventory' | 'origen_inventory' | 'tgiann-inventory' | 'jaksam_inventory' | 'codem-inventory'
 
 ---@alias AvailablePhones 'lb-phone' | 'yseries' | 'yphone' | 'yflip' | 'npwd' | 'roadphone' | '17mov_phone'
 
