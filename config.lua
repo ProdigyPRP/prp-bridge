@@ -71,7 +71,9 @@ BridgeConfig.Medical = 'qbx_medical'
         - cd_dispatch
         - tk_dispatch
         - rcore_dispatch
-        - lb-tablet
+        - aty_dispatch
+        - codem-dispatch
+        - core_dispatch
 ]]
 ---@type AvailableDispatches
 BridgeConfig.Dispatch = "ps-dispatch"
