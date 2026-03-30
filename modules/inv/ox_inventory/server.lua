@@ -120,7 +120,7 @@ end
 ---@param slot number|nil
 ---@return boolean, InvRemoveItemResp
 function inv.removeItem(inventoryId, itemName, count, metadata, slot)
-    return ox_inventory:RemoveItem(inventoryId, itemName, count, metadata or {}, slot)
+    return ox_inventory:RemoveItem(inventoryId, itemName, count, metadata, slot)
 end
 
 ---@param itemName string
