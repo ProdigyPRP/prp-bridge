@@ -37,6 +37,7 @@ BridgeConfig.Inventory = "ox_inventory"
         - roadphone
         - 17mov_phone
         - gksphone
+        - meteo-phone
 ]]
 ---@type AvailablePhones
 BridgeConfig.Phone = "lb-phone"
