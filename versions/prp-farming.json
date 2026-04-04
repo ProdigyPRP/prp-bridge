@@ -1,5 +1,16 @@
 {
-  "version": "1.0.0",
-  "changes": [],
-  "filesAffected": []
+  "version": "1.0.1",
+  "changes": [
+      "Fixed progress bar tasks not disabling movement",
+      "Fixed floating milk buckets in vehicle",
+      "Added missing locales"
+  ],
+  "filesAffected": [
+      "client/activities/animalActivities.lua",
+      "client/activities/farmActivities.lua",
+      "client/openworld.lua",
+      "client/main.lua",
+      "shared/config.lua",
+      "locales/*.json"
+  ]
 }
