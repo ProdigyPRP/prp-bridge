@@ -25,11 +25,6 @@ exports('startGlobalCooldown', startGlobalCooldown)
 local function startCooldownByIdentifier(identifier, cooldownKey, minutes, applyToAllCharacters)
     local cooldownIdentifier = ('character-%s-%s'):format(identifier, cooldownKey)
 
-    if applyToAllCharacters then
-        local source = bridge.fw.getSrcFromIdentifier(identifier)
-        cooldownIdentifier = ('player-%s-%s'):format(source, cooldownKey)
-    end
-
     if cooldowns[cooldownIdentifier] then
         lib.print.debug('Tried to start a player cooldown that already exists', identifier, cooldownKey,
             minutes,
