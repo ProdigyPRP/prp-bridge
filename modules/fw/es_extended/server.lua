@@ -335,6 +335,7 @@ function fw.getOwnedVehicleByPlate(plate, returnEmpty)
     end
 
     local vehData = lib.table.deepclone(BridgeConfig.VehicleData[vehicle.vehicle.model])
+    vehData.plate = vehicle.plate
     return lib.table.merge(vehData, vehicle, false)
 end
 
@@ -369,6 +370,7 @@ function fw.getAllOwnedVehicles(identifier, classes)
         end
 
         local vehData = lib.table.deepclone(BridgeConfig.VehicleData[vehicle.properties.model])
+        vehData.plate = vehicle.plate
         if not classes or vehData and vehData.class and (type(classes) == "table" and lib.table.contains(classes, vehData.class) or vehData.class == classes) then
             filtered[#filtered+1] = lib.table.merge(vehData, vehicle, false)
         end
