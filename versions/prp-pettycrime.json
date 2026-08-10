@@ -1,9 +1,7 @@
 {
-  "version": "1.0.1",
+  "version": "1.0.2",
   "changes": [
-      "Fixed targeting broken parking meter causing native exception" 
+      "Please check the changelogs channel in the Prodigy Studio Discord"
   ],
-  "filesAffected": [
-      "client/parking_maters/parking_maters.lua"
-  ]
+  "filesAffected": []
 }
