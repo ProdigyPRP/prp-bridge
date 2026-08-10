@@ -1,7 +1,10 @@
 {
-  "version": "1.0.2",
+  "version": "1.0.3",
   "changes": [
-      "Please check the changelogs channel in the Prodigy Studio Discord"
+      "Fix when searching the same postboxe twice"
   ],
-  "filesAffected": []
+  "filesAffected": [
+      "fxmanifest.lua",
+      "server/letter_boxes/letter_boxes.lua"
+  ]
 }
