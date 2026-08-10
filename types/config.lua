@@ -10,7 +10,7 @@
 
 ---@alias AvailableMedicals 'qbx_medical' | 'esx_ambulancejob' | 'wasabi_ambulance' | 'ars_ambulancejob' | 'osp_ambulance' | 'p-ambulancejob' | 'nd_ambulance' | 'qb-ambulancejob' | 'randol_medical' | 'tk_ambulancejob' | false
 
----@alias AvailableDispatches 'ps-dispatch' | 'origen_police' | 'cd_dispatch' | 'rcore_dispatch' | 'tk_dispatch' | 'lb-tablet' | 'aty_dispatch' | 'codem-dispatch' | 'core_dispatch' | 'qs-dispatch' | false
+---@alias AvailableDispatches 'ps-dispatch' | 'origen_police' | 'cd_dispatch' | 'rcore_dispatch' | 'tk_dispatch' | 'lb-tablet' | 'aty_dispatch' | 'codem-dispatch' | 'core_dispatch' | 'kartik-mdt' | 'qs-dispatch' | false
 
 ---@alias AvailableMinigames 'prp-minigames' | false
 
