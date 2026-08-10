@@ -27,13 +27,15 @@ BridgeConfig = {
     FrameWork  = "qbx_core",         -- qbx_core | ox_core | qb-core | es_extended | nd_core
 
     -- External systems (set any to false to disable that category)
-    Inventory   = "ox_inventory",    -- ox_inventory | origen_inventory | tgiann_inventory | false
-    Phone       = "lb-phone",        -- lb-phone | yseries | yphone | yflip | npwd | roadphone | 17mov_phone | gksphone | qs-smartphone-pro | false
+    Inventory   = "ox_inventory",    -- ox_inventory | origen_inventory | tgiann-inventory | false
+    Phone       = "lb-phone",        -- lb-phone | yseries | yphone | yflip | npwd | roadphone | 17mov_phone | gksphone | meteo-phone | qs-smartphone-pro | false
     Target      = "ox_target",       -- ox_target | qb-target | sleepless_interact | false
-    Medical     = "qbx_medical",     -- qbx_medical | esx_ambulancejob | nd_ambulance | false
-    Dispatch    = "ps-dispatch",     -- ps-dispatch | origen_police | cd_dispatch | rcore_dispatch | qs-dispatch | false
-    VehicleKeys = "qbx_vehiclekeys", -- qbx_vehiclekeys | cd_garage | mVehicle | okokGarage | wasabi_carlock | mrnewbvehiclekeys | Renewed-Vehiclekeys | false | ...
-    VehicleFuel = "ox_fuel",         -- ox_fuel | LegacyFuel | cdn-fuel | lc_fuel | qb-fuel | Renewed-Fuel | false
+    Medical     = "qbx_medical",     -- qbx_medical | esx_ambulancejob | wasabi_ambulance | ars_ambulancejob | osp_ambulance | p-ambulancejob | nd_ambulance | qb-ambulancejob | randol_medical | tk_ambulancejob | false
+    Dispatch    = "ps-dispatch",     -- ps-dispatch | origen_police | cd_dispatch | rcore_dispatch | tk_dispatch | lb-tablet | aty_dispatch | codem-dispatch | core_dispatch | qs-dispatch | false
+    VehicleKeys = "qbx_vehiclekeys", -- qbx_vehiclekeys | cd_garage | mVehicle | okokGarage | vehicles_keys | wasabi_carlock | nd_core | mrnewbvehiclekeys | Renewed-Vehiclekeys | qb-vehiclekeys | false
+    VehicleFuel = "ox_fuel",         -- ox_fuel | LegacyFuel | cdn-fuel | lc_fuel | qb-fuel | Renewed-Fuel | rcore_fuel | false
+    Appearance  = "illenium-appearance", -- illenium-appearance | fivem-appearance | qb-clothing | esx_skin | false
+    Voice       = "pma-voice",       -- pma-voice | false
     Minigames   = "prp-minigames",   -- prp-minigames | false
 
     -- Group command
@@ -76,13 +78,15 @@ The `modules/` folder contains implementations for external resources. Each cate
 ```
 modules/
 ├── fw/          # frameworks  (qbx_core, ox_core, qb-core, es_extended, nd_core)
-├── inv/         # inventories (ox_inventory, origen_inventory, tgiann_inventory)
+├── inv/         # inventories (ox_inventory, origen_inventory, tgiann-inventory)
 ├── target/      # targeting   (ox_target, qb-target, sleepless_interact)
-├── dispatch/    # dispatch    (ps-dispatch, origen_police, cd_dispatch, rcore_dispatch, qs-dispatch)
-├── medical/     # medical     (qbx_medical, esx_ambulancejob, nd_ambulance)
-├── phone/       # phones      (lb-phone, yseries, yphone, npwd, ...)
-├── vkeys/       # vehicle keys
-├── vfuel/       # vehicle fuel
+├── dispatch/    # dispatch    (ps-dispatch, origen_police, cd_dispatch, rcore_dispatch, tk_dispatch, lb-tablet, aty_dispatch, codem-dispatch, core_dispatch, qs-dispatch)
+├── medical/     # medical     (qbx_medical, esx_ambulancejob, wasabi_ambulance, tk_ambulancejob, nd_ambulance, osp_ambulance, p-ambulancejob, randol_medical, qb-ambulancejob)
+├── appearance/  # appearance  (illenium-appearance, fivem-appearance, qb-clothing, esx_skin)
+├── phone/       # phones      (lb-phone, yseries, yphone, yflip, npwd, roadphone, 17mov_phone, gksphone, meteo-phone, qs-smartphone-pro)
+├── vkeys/       # vehicle keys (qbx_vehiclekeys, qb-vehiclekeys, cd_garage, mVehicle, okokGarage, vehicles_keys, wasabi_carlock, nd_core, mrnewbvehiclekeys, Renewed-Vehiclekeys)
+├── vfuel/       # vehicle fuel (ox_fuel, LegacyFuel, cdn-fuel, lc_fuel, qb-fuel, Renewed-Fuel, rcore_fuel)
+├── voice/       # voice systems (pma-voice)
 ├── minigames/   # minigames
 ├── log/         # Discord logging
 └── sound/       # sound system

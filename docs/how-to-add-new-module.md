@@ -260,7 +260,7 @@ BridgeConfig = {
 ---@alias BridgeInventory
 ---| "ox_inventory"
 ---| "origen_inventory"
----| "tgiann_inventory"
+---| "tgiann-inventory"
 ---| "my_inventory"   -- <-- add here
 ```
 
