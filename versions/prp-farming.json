@@ -1,13 +1,7 @@
 {
-  "version": "1.1.0",
+  "version": "1.1.2",
   "changes": [
-      "Fixed milking job breaking when you have more than 7 milk buckets to collect",
-      "Moved sell shop code to own file and unescrowed it"
+      "Please check the changelogs channel in the Prodigy Studio Discord"
   ],
-  "filesAffected": [
-      "server/activities/animalActivities.lua",
-      "server/openworld.lua",
-      "server/shop.lua",
-      "server/main.lua"
-  ]
+  "filesAffected": []
 }
