@@ -1,7 +1,10 @@
 {
-  "version": "1.0.5",
+  "version": "1.0.6",
   "changes": [
-      "Please check the changelogs channel in the Prodigy Studio Discord"
+    "Fix joint smoking scenario breaking visibility and vehicle collision when used in a vehicle"
   ],
-  "filesAffected": []
+  "filesAffected": [
+    "fxmanifest.lua",
+    "config/client.lua"
+  ]
 }
