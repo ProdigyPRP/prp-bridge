@@ -1,10 +1,10 @@
 {
-  "version": "1.0.3",
+  "version": "1.0.4",
   "changes": [
-      "Fix when searching the same postboxe twice"
+      "Fix parking meter (and letterbox/mail) showing found nothing when loot was actually given"
   ],
   "filesAffected": [
       "fxmanifest.lua",
-      "server/letter_boxes/letter_boxes.lua"
+      "server/utils.lua"
   ]
 }
