@@ -1,5 +1,9 @@
 {
-  "version": "1.0.0",
-  "changes": [],
-  "filesAffected": []
+  "version": "1.1.5",
+  "changes": [
+      "Fix sell shops always failing proximity checks when coords were not provided"
+  ],
+  "filesAffected": [
+      "sellshops/server.lua"
+  ]
 }

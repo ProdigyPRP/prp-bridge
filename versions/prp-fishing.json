@@ -1,5 +1,9 @@
 {
-  "version": "1.0.0",
-  "changes": [],
-  "filesAffected": []
+  "version": "1.0.1",
+  "changes": [
+      "Pass sell shop coords to prp-bridge so the shop can open"
+  ],
+  "filesAffected": [
+      "server/stations.lua"
+  ]
 }

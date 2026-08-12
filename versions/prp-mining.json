@@ -1,7 +1,10 @@
 {
-  "version": "1.1.5",
+  "version": "1.1.6",
   "changes": [
-      "Please check the changelogs channel in the Prodigy Studio Discord"
+      "Pass sell shop coords to prp-bridge so the shop can open"
   ],
-  "filesAffected": []
+  "filesAffected": [
+      "server/main.lua",
+      "server/server.lua"
+  ]
 }

@@ -1,9 +1,35 @@
 local shops = {}
 local DEFAULT_SELL_SHOP_DISTANCE <const> = 5.0
 
+local function getShopCoordsList(coords)
+    if not coords then
+        return nil
+    end
+
+    if coords.x then
+        return { coords }
+    end
+
+    return coords
+end
+
+local function getPrimaryShopCoords(coords)
+    local coordsList = getShopCoordsList(coords)
+    if not coordsList then
+        return nil
+    end
+
+    return coordsList[1]
+end
+
 local function isPlayerNearShop(src, shop)
-    if not shop or not shop.coords then
+    if not shop then
         return false
+    end
+
+    local coordsList = getShopCoordsList(shop.coords)
+    if not coordsList then
+        return true
     end
 
     local ped = GetPlayerPed(src)
@@ -12,10 +38,17 @@ local function isPlayerNearShop(src, shop)
     end
 
     local playerCoords = GetEntityCoords(ped)
-    local shopCoords = vector3(shop.coords.x, shop.coords.y, shop.coords.z)
     local maxDistance = shop.distance or shop.maxDistance or DEFAULT_SELL_SHOP_DISTANCE
 
-    return #(playerCoords - shopCoords) <= maxDistance
+    for i = 1, #coordsList do
+        local coords = coordsList[i]
+        local shopCoords = vector3(coords.x, coords.y, coords.z)
+        if #(playerCoords - shopCoords) <= maxDistance then
+            return true
+        end
+    end
+
+    return false
 end
 
 bridge.inv.registerSwapItemsHook(function(payload)
@@ -88,7 +121,7 @@ local function registerShop(id, payload)
         label = payload.label,
         slots = 1,
         maxWeight = 9000000,
-        coords = payload.coords,
+        coords = getPrimaryShopCoords(payload.coords),
     })
 
     bridge.inv.clearInventory(shopId)
