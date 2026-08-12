@@ -1,5 +1,14 @@
 {
-  "version": "1.0.0",
-  "changes": [],
-  "filesAffected": []
+  "version": "1.0.1",
+  "changes": [
+    "Now enforce character maximum slots"
+  ],
+  "filesAffected": [
+    "configs/main.lua",
+    "server/callbacks.lua",
+    "client/nui.lua",
+    "client/selection.lua",
+    "fxmanifest.lua",
+    "UI folder"
+  ]
 }
