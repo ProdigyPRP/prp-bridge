@@ -1,7 +1,11 @@
 {
-  "version": "1.0.2",
+  "version": "1.0.3",
   "changes": [
-      "Please check the changelogs channel in the Prodigy Studio Discord"
+      "Fixed a security issue where Discord log webhooks were available on the client"
   ],
-  "filesAffected": []
+  "filesAffected": [
+      "fxmanifest.lua",
+      "config/general.lua",
+      "config/sv_config.lua"
+  ]
 }

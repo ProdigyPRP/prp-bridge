@@ -1,5 +1,11 @@
 {
-  "version": "1.0.0",
-  "changes": [],
-  "filesAffected": []
+  "version": "1.0.1",
+  "changes": [
+      "Fixed a security issue where Discord log webhooks were available on the client"
+  ],
+  "filesAffected": [
+      "fxmanifest.lua",
+      "config/main.lua",
+      "config/config.lua"
+  ]
 }
