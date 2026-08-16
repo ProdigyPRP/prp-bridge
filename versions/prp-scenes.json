@@ -1,11 +1,14 @@
 {
-  "version": "1.0.3",
+  "version": "1.0.4",
   "changes": [
-    "Fixed a bug where scenes went out of focus during graffiti painting."
+    "Scenes are now isolated per routing bucket so texts placed in a house interior are not visible in other properties that share the same interior."
   ],
   "filesAffected": [
     "fxmanifest.lua",
-    "client/creator.lua",
-    "editable/cl_nui.lua"
+    "editable/sv_config.lua",
+    "server/main.lua",
+    "client/main.lua",
+    "client/scene.lua",
+    "client/creator.lua"
   ]
 }
