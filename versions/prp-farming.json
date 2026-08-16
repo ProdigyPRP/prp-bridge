@@ -1,9 +1,12 @@
 {
-  "version": "1.1.3",
+  "version": "1.2.0",
   "changes": [
-      "Pass sell shop coords to prp-bridge so the shop can open"
+      "Added a Check Crop Status target on pots so farmers can see growth, water, and fertilizer percentages. checkStatusAfter now actually gates when status becomes available"
   ],
   "filesAffected": [
-      "server/shop.lua"
+      "fxmanifest.lua",
+      "client/openworld.lua",
+      "server/openworld.lua",
+      "locales folder"
   ]
 }
