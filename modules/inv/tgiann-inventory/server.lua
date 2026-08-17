@@ -248,7 +248,11 @@ function inv.createCustomDrop(prefix, items, coords, slots, maxWeight, instance,
     local formattedItems = {}
 
     for _, item in pairs(items) do
-        formattedItems[#formattedItems + 1] = { item.name, item.count, item.metaData or {} }
+        formattedItems[#formattedItems + 1] = {
+            name = item.name,
+            amount = item.count or item.amount or 1,
+            info = item.metaData or item.metadata or item.info or {}
+        }
     end
 
     return tgiann:CustomDrop(prefix, formattedItems, coords, slots, maxWeight * 1000, instance)
