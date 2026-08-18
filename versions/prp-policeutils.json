@@ -1,10 +1,12 @@
 {
-  "version": "1.0.3",
+  "version": "1.1.0",
   "changes": [
-      "Fixed spike strips not deploying when using the remote."
+      "Fixed spike strips not deploying when using the remote. Retracted strips kept a collapsed matrix, so the deploy animation had no size to scale from",
+      "Added Spikes.Length so the deployed spike strip size can be configured"
   ],
   "filesAffected": [
       "fxmanifest.lua",
-      "client/spikesC.lua"
+      "client/spikesC.lua",
+      "shared/spikes_config.lua"
   ]
 }
