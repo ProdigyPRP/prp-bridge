@@ -1,7 +1,10 @@
 {
-  "version": "1.0.2",
+  "version": "1.0.3",
   "changes": [
-      "Please check the changelogs channel in the Prodigy Studio Discord"
+      "Fixed spike strips not deploying when using the remote."
   ],
-  "filesAffected": []
+  "filesAffected": [
+      "fxmanifest.lua",
+      "client/spikesC.lua"
+  ]
 }
