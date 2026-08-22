@@ -1,10 +1,10 @@
 {
-  "version": "1.1.6",
+  "version": "1.1.7",
   "changes": [
-      "Pass sell shop coords to prp-bridge so the shop can open"
+      "Removed commented WEAPON_PICKAXE and WEAPON_DRILL from the inventory items"
   ],
   "filesAffected": [
-      "server/main.lua",
-      "server/server.lua"
+      "fxmanifest.lua",
+      "config/sh_config.lua"
   ]
 }
