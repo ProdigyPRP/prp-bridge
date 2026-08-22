@@ -1,12 +1,10 @@
 {
-  "version": "1.1.0",
+  "version": "1.1.1",
   "changes": [
-      "Fixed spike strips not deploying when using the remote. Retracted strips kept a collapsed matrix, so the deploy animation had no size to scale from",
-      "Added Spikes.Length so the deployed spike strip size can be configured"
+      "Fixed spike strips floating in the air for distant players when opened. Ground placement now waits for collision, uses GetGroundZ, and keeps the grounded coords for deploy/retract"
   ],
   "filesAffected": [
       "fxmanifest.lua",
-      "client/spikesC.lua",
-      "shared/spikes_config.lua"
+      "client/spikesC.lua"
   ]
 }
