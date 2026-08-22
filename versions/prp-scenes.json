@@ -1,14 +1,10 @@
 {
-  "version": "1.0.4",
+  "version": "1.0.5",
   "changes": [
-    "Scenes are now isolated per routing bucket so texts placed in a house interior are not visible in other properties that share the same interior."
+    "Routed scenes now re-check bucket access while nearby so texts no longer stay visible after switching dimensions without leaving render distance."
   ],
   "filesAffected": [
     "fxmanifest.lua",
-    "editable/sv_config.lua",
-    "server/main.lua",
-    "client/main.lua",
-    "client/scene.lua",
-    "client/creator.lua"
+    "client/scene.lua"
   ]
 }
