@@ -1,11 +1,11 @@
 {
-  "version": "1.0.3",
+  "version": "1.0.4",
   "changes": [
-      "Fixed a security issue where Discord log webhooks were available on the client"
+      "Fixed death teleport to entrance still firing after leaving a horde instance"
   ],
   "filesAffected": [
       "fxmanifest.lua",
-      "config/general.lua",
-      "config/sv_config.lua"
+      "client/cl_main.lua",
+      "server/classes/game.lua"
   ]
 }
