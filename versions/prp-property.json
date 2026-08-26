@@ -1,5 +1,10 @@
 {
-  "version": "1.0.0",
-  "changes": [],
-  "filesAffected": []
+  "version": "1.0.1",
+  "changes": [
+    "Removed duplicated elevator code from apartments pack"
+  ],
+  "filesAffected": [
+    "client/apartments/elevator.lua removed",
+    "fxmanifest.lua"
+  ]
 }
