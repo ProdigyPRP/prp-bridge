@@ -261,6 +261,10 @@ if bridge.name == bridge.currentResource then
     RegisterNetEvent('esx:onPlayerLogout', function()
         TriggerEvent('prp-bridge:client:playerUnload')
     end)
+
+    RegisterNetEvent('esx:setJob', function(job)
+        TriggerEvent('prp-bridge:client:jobChanged', job)
+    end)
 end
 
 return fw

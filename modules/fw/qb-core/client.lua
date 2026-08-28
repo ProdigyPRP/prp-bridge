@@ -237,8 +237,14 @@ if bridge.name == bridge.currentResource then
         TriggerEvent('prp-bridge:client:playerUnload', src)
     end)
 
+    RegisterNetEvent('QBCore:Client:OnJobUpdate', function(job)
+        Wait(100)
+        TriggerEvent('prp-bridge:client:jobChanged', QBCore.Functions.GetPlayerData().job or job)
+    end)
+
     AddEventHandler('QBCore:Player:SetPlayerData', function()
         Wait(100)
+        TriggerEvent('prp-bridge:client:jobChanged', QBCore.Functions.GetPlayerData().job)
         emitAllStatuses()
     end)
 end
