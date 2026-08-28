@@ -1,12 +1,18 @@
 {
-  "version": "1.0.2",
+  "version": "1.0.4",
   "changes": [
     "Added improved apartment debug system with [Apartment] prefixed logs across assignment, tower spawn, floor IPL loading, and receptionist registration (toggle via /housing_debug)",
     "Fixed receptionist peds not appearing due to startup race condition when prp-property loads before prp-apartments (retry + dependency listener)",
     "Fixed receptionist ped Z offset placing NPCs below lobby floor",
     "Fixed apartment state not resyncing to client on reconnect",
     "Fixed double tower teleport on spawn callback",
-    "Removed missing client/apartments/elevator.lua from manifest (handled by prp-apartments)"
+    "Removed missing client/apartments/elevator.lua from manifest (handled by prp-apartments)",
+    "Fixed gizmo translate/rotate mode switching failing with 'Access denied for command +gizmoTranslation/+gizmoRotation'",
+    "Fixed gizmo staying stuck in rotate mode after placing or selecting furniture, causing every new item to open in rotation mode",
+    "Reset gizmo to translate mode when selecting, placing, or deselecting furniture entities",
+    "Use ResolvePropertyInteriorId for apartment furniture placement rotation calculations",
+    "Added missing furniture props to furnishing catalog",
+    "Unlocked additional escrow files"
   ],
   "filesAffected": [
     "fxmanifest.lua",
@@ -16,6 +22,13 @@
     "client/main.lua",
     "client/apartments/apartment.lua",
     "client/apartments/lombank_loader.lua",
-    "server/apartments/locations.lua"
+    "server/apartments/locations.lua",
+    "client/gizmo/gizmo.lua",
+    "client/gizmo/nui.lua",
+    "furnishing/furniture_items.json",
+    "server/editable.lua",
+    "server/garage/providers/*.lua",
+    "server/garage/main.lua",
+    "shared/garage/*.lua"
   ]
 }
