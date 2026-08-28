@@ -1,7 +1,11 @@
 {
-  "version": "1.0.1",
+  "version": "1.0.2",
   "changes": [
-      "Please check the changelogs channel in the Prodigy Studio Discord"
+    "Fixed server error when canceling a drug run (table index is nil) caused by passing an invalid game id on cancel",
+    "Fixed mission blips not being removed from the map after canceling a drug run"
   ],
-  "filesAffected": []
+  "filesAffected": [
+    "fxmanifest.lua",
+    "server/classes/game.lua"
+  ]
 }
