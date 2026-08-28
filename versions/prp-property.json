@@ -1,10 +1,21 @@
 {
-  "version": "1.0.1",
+  "version": "1.0.2",
   "changes": [
-    "Removed duplicated elevator code from apartments pack"
+    "Added improved apartment debug system with [Apartment] prefixed logs across assignment, tower spawn, floor IPL loading, and receptionist registration (toggle via /housing_debug)",
+    "Fixed receptionist peds not appearing due to startup race condition when prp-property loads before prp-apartments (retry + dependency listener)",
+    "Fixed receptionist ped Z offset placing NPCs below lobby floor",
+    "Fixed apartment state not resyncing to client on reconnect",
+    "Fixed double tower teleport on spawn callback",
+    "Removed missing client/apartments/elevator.lua from manifest (handled by prp-apartments)"
   ],
   "filesAffected": [
-    "client/apartments/elevator.lua removed",
-    "fxmanifest.lua"
+    "fxmanifest.lua",
+    "shared/utils.lua",
+    "shared/bridge_adapter.lua",
+    "shared/events.lua",
+    "client/main.lua",
+    "client/apartments/apartment.lua",
+    "client/apartments/lombank_loader.lua",
+    "server/apartments/locations.lua"
   ]
 }
