@@ -1,20 +1,25 @@
 {
-  "version": "1.0.6",
+  "version": "1.0.7",
   "changes": [
-    "Fixed apartment tower guests/invitees not loading furniture (empty apartment for visitors while owner sees props)",
-    "Fixed Citizen/State IDs input to accept alphanumeric characters (letters + numbers), not numbers only",
-    "Fixed sync garage on server start"
+    "Fixed door upgrade not locking interior doors until a restart, and doors that could not be unlocked afterward",
+    "Fixed property doors staying open after entering a shell home",
+    "Fixed furniture sometimes rotating to the wrong angle after placing it",
+    "Fixed furniture previews getting stuck when switching items quickly in the furnish menu"
   ],
   "filesAffected": [
     "fxmanifest.lua",
-    "client/apartments/apartment.lua",
-    "server/callbacks.lua",
-    "client/open_world_furnishing/layout.lua",
-    "ui/**",
+    "config/sh_config.lua",
+    "client/property.lua",
+    "client/doors.lua",
     "client/events.lua",
-    "client/garage/zones.lua",
-    "client/main.lua",
-    "server/database.lua",
-    "server/garage/main.lua"
+    "client/central/nui.lua",
+    "client/gizmo/nui.lua",
+    "server/callbacks.lua",
+    "server/functions.lua",
+    "server/events.lua",
+    "server/doorlock.lua",
+    "server/shells/instance.lua",
+    "server/interiors/instance.lua",
+    "ui/**"
   ]
 }
