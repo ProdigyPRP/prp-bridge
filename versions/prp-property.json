@@ -1,12 +1,20 @@
 {
-  "version": "1.0.5",
+  "version": "1.0.6",
   "changes": [
-    "Fixed apartment furniture rotation Z gaining a constant +interior heading offset on every place/save",
-    "GetPlayersCloseToHouse now includes players already inside via housingId state (apartment furnish sync)"
+    "Fixed apartment tower guests/invitees not loading furniture (empty apartment for visitors while owner sees props)",
+    "Fixed Citizen/State IDs input to accept alphanumeric characters (letters + numbers), not numbers only",
+    "Fixed sync garage on server start"
   ],
   "filesAffected": [
     "fxmanifest.lua",
-    "client/property.lua",
-    "client/gizmo/nui.lua"
+    "client/apartments/apartment.lua",
+    "server/callbacks.lua",
+    "client/open_world_furnishing/layout.lua",
+    "ui/**",
+    "client/events.lua",
+    "client/garage/zones.lua",
+    "client/main.lua",
+    "server/database.lua",
+    "server/garage/main.lua"
   ]
 }
