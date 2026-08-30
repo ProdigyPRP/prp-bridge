@@ -1,38 +1,12 @@
 {
-  "version": "1.0.4",
+  "version": "1.0.5",
   "changes": [
-    "Added improved apartment debug system with [Apartment] prefixed logs across assignment, tower spawn, floor IPL loading, and receptionist registration (toggle via /housing_debug)",
-    "Fixed receptionist peds not appearing due to startup race condition when prp-property loads before prp-apartments (retry + dependency listener + prp-bridge:client:playerLoad)",
-    "Consolidated client lifecycle to prp-bridge events",
-    "Replaced QBCore job handlers in realestate radial with prp-bridge:client:jobChanged",
-    "Fixed receptionist ped Z offset placing NPCs below lobby floor",
-    "Fixed apartment state not resyncing to client on reconnect",
-    "Fixed double tower teleport on spawn callback",
-    "Removed missing client/apartments/elevator.lua from manifest (handled by prp-apartments)",
-    "Fixed gizmo translate/rotate mode switching failing with 'Access denied for command +gizmoTranslation/+gizmoRotation'",
-    "Fixed gizmo staying stuck in rotate mode after placing or selecting furniture, causing every new item to open in rotation mode",
-    "Reset gizmo to translate mode when selecting, placing, or deselecting furniture entities",
-    "Use ResolvePropertyInteriorId for apartment furniture placement rotation calculations",
-    "Added missing furniture props to furnishing catalog",
-    "Unlocked additional escrow files"
+    "Fixed apartment furniture rotation Z gaining a constant +interior heading offset on every place/save",
+    "GetPlayersCloseToHouse now includes players already inside via housingId state (apartment furnish sync)"
   ],
   "filesAffected": [
     "fxmanifest.lua",
-    "shared/utils.lua",
-    "shared/bridge_adapter.lua",
-    "shared/events.lua",
-    "client/main.lua",
-    "client/events.lua",
-    "client/radial.lua",
-    "client/apartments/apartment.lua",
-    "client/apartments/lombank_loader.lua",
-    "server/apartments/locations.lua",
-    "client/gizmo/gizmo.lua",
-    "client/gizmo/nui.lua",
-    "furnishing/furniture_items.json",
-    "server/editable.lua",
-    "server/garage/providers/*.lua",
-    "server/garage/main.lua",
-    "shared/garage/*.lua"
+    "client/property.lua",
+    "client/gizmo/nui.lua"
   ]
 }
