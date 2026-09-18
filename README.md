@@ -31,8 +31,8 @@ BridgeConfig = {
     Phone       = "lb-phone",        -- lb-phone | yseries | yphone | yflip | npwd | roadphone | 17mov_phone | gksphone | meteo-phone | qs-smartphone-pro | false
     Target      = "ox_target",       -- ox_target | qb-target | sleepless_interact | false
     Medical     = "qbx_medical",     -- qbx_medical | esx_ambulancejob | wasabi_ambulance | ars_ambulancejob | osp_ambulance | p-ambulancejob | nd_ambulance | qb-ambulancejob | randol_medical | tk_ambulancejob | false
-    Dispatch    = "ps-dispatch",     -- ps-dispatch | origen_police | cd_dispatch | rcore_dispatch | tk_dispatch | lb-tablet | aty_dispatch | codem-dispatch | core_dispatch | qs-dispatch | false
-    VehicleKeys = "qbx_vehiclekeys", -- qbx_vehiclekeys | cd_garage | mVehicle | okokGarage | vehicles_keys | wasabi_carlock | nd_core | mrnewbvehiclekeys | Renewed-Vehiclekeys | qb-vehiclekeys | false
+    Dispatch    = "ps-dispatch",     -- ps-dispatch | origen_police | cd_dispatch | rcore_dispatch | tk_dispatch | lb-tablet | aty_dispatch | codem-dispatch | core_dispatch | qs-dispatch | p_mdt | false
+    VehicleKeys = "qbx_vehiclekeys", -- qbx_vehiclekeys | cd_garage | mVehicle | okokGarage | vehicles_keys | wasabi_carlock | nd_core | mrnewbvehiclekeys | Renewed-Vehiclekeys | qb-vehiclekeys | p_vehiclekeys | false
     VehicleFuel = "ox_fuel",         -- ox_fuel | LegacyFuel | cdn-fuel | lc_fuel | qb-fuel | Renewed-Fuel | rcore_fuel | false
     Appearance  = "illenium-appearance", -- illenium-appearance | fivem-appearance | qb-clothing | esx_skin | false
     Voice       = "pma-voice",       -- pma-voice | false
@@ -80,11 +80,11 @@ modules/
 ├── fw/          # frameworks  (qbx_core, ox_core, qb-core, es_extended, nd_core)
 ├── inv/         # inventories (ox_inventory, origen_inventory, tgiann-inventory)
 ├── target/      # targeting   (ox_target, qb-target, sleepless_interact)
-├── dispatch/    # dispatch    (ps-dispatch, origen_police, cd_dispatch, rcore_dispatch, tk_dispatch, lb-tablet, aty_dispatch, codem-dispatch, core_dispatch, qs-dispatch)
+├── dispatch/    # dispatch    (ps-dispatch, origen_police, cd_dispatch, rcore_dispatch, tk_dispatch, lb-tablet, aty_dispatch, codem-dispatch, core_dispatch, qs-dispatch, p_mdt)
 ├── medical/     # medical     (qbx_medical, esx_ambulancejob, wasabi_ambulance, tk_ambulancejob, nd_ambulance, osp_ambulance, p-ambulancejob, randol_medical, qb-ambulancejob)
 ├── appearance/  # appearance  (illenium-appearance, fivem-appearance, qb-clothing, esx_skin)
 ├── phone/       # phones      (lb-phone, yseries, yphone, yflip, npwd, roadphone, 17mov_phone, gksphone, meteo-phone, qs-smartphone-pro)
-├── vkeys/       # vehicle keys (qbx_vehiclekeys, qb-vehiclekeys, cd_garage, mVehicle, okokGarage, vehicles_keys, wasabi_carlock, nd_core, mrnewbvehiclekeys, Renewed-Vehiclekeys)
+├── vkeys/       # vehicle keys (qbx_vehiclekeys, qb-vehiclekeys, cd_garage, mVehicle, okokGarage, vehicles_keys, wasabi_carlock, nd_core, mrnewbvehiclekeys, Renewed-Vehiclekeys, p_vehiclekeys)
 ├── vfuel/       # vehicle fuel (ox_fuel, LegacyFuel, cdn-fuel, lc_fuel, qb-fuel, Renewed-Fuel, rcore_fuel)
 ├── voice/       # voice systems (pma-voice)
 ├── minigames/   # minigames

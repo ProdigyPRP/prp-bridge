@@ -10,7 +10,7 @@
 
 ---@alias AvailableMedicals 'qbx_medical' | 'esx_ambulancejob' | 'wasabi_ambulance' | 'ars_ambulancejob' | 'osp_ambulance' | 'p-ambulancejob' | 'nd_ambulance' | 'qb-ambulancejob' | 'randol_medical' | 'tk_ambulancejob' | false
 
----@alias AvailableDispatches 'ps-dispatch' | 'origen_police' | 'cd_dispatch' | 'rcore_dispatch' | 'tk_dispatch' | 'lb-tablet' | 'aty_dispatch' | 'codem-dispatch' | 'core_dispatch' | 'kartik-mdt' | 'qs-dispatch' | false
+---@alias AvailableDispatches 'ps-dispatch' | 'origen_police' | 'cd_dispatch' | 'rcore_dispatch' | 'tk_dispatch' | 'lb-tablet' | 'aty_dispatch' | 'codem-dispatch' | 'core_dispatch' | 'kartik-mdt' | 'qs-dispatch' | 'p_mdt' | false
 
 ---@alias AvailableMinigames 'prp-minigames' | false
 
@@ -26,7 +26,7 @@
 ---@field volumeCount number
 ---@field indicator string
 
----@alias AvailableVehicleKeys 'cd_garage' | 'mVehicle' | 'okokGarage' | 'qb-vehiclekeys' | 'qbx_vehiclekeys' | 'vehicles_keys' | 'wasabi_carlock' | 'nd_core' | 'mrnewbvehiclekeys' | 'Renewed-Vehiclekeys' | false
+---@alias AvailableVehicleKeys 'cd_garage' | 'mVehicle' | 'okokGarage' | 'qb-vehiclekeys' | 'qbx_vehiclekeys' | 'vehicles_keys' | 'wasabi_carlock' | 'nd_core' | 'mrnewbvehiclekeys' | 'Renewed-Vehiclekeys' | 'p_vehiclekeys' | false
 
 ---@alias VehicleClasses 'X' | 'S' | 'A' | 'B' | 'C' | 'D' | 'E' | 'EV1' | 'EV2'
 ---@alias VehicleTypes 'car' | 'bike' | 'quadbike' | 'bicycle' | 'heli' | 'plane' | 'boat' | 'trailer' | 'train' | 'blimp' | 'submarine' | 'submarinecar' | 'amphibious_quadbike' | 'amphibious_automobile'
