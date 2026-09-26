@@ -251,6 +251,15 @@ function fw.hasJob(src, job, grade, duty)
     return true
 end
 
+---@param src number | string
+---@param gang string
+---@param grade number? do they require a minimum grade
+---@return boolean
+function fw.hasGang(src, gang, grade)
+    -- ESX does not have gang system
+    return false
+end
+
 ---@param jobName string
 ---@return number
 function fw.getDutyCountJob(jobName)

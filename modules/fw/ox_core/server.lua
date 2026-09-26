@@ -354,6 +354,28 @@ function fw.hasJob(src, job, grade, duty)
     return true
 end
 
+---@param src number | string
+---@param gang string
+---@param grade number? do they require a minimum grade
+---@return boolean
+function fw.hasGang(src, gang, grade)
+    local player = getPlayer(src)
+    if not player then
+        return false
+    end
+
+    local playerGrade = player.getGroup(gang)
+    if not playerGrade then
+        return false
+    end
+
+    if grade and playerGrade < grade then
+        return false
+    end
+
+    return true
+end
+
 ---@param jobName string
 ---@return number
 function fw.getDutyCountJob(jobName)
