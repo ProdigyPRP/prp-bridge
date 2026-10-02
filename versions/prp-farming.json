@@ -1,12 +1,12 @@
 {
-  "version": "1.2.0",
+  "version": "1.2.1",
   "changes": [
-      "Added a Check Crop Status target on pots so farmers can see growth, water, and fertilizer percentages. checkStatusAfter now actually gates when status becomes available"
+      "Made the milking progress animation configurable via Config.Activities.milking_cows.animation",
+      "Made the vehicle trunk milk bucket prop configurable via Config.VehAttachMilk.model"
   ],
   "filesAffected": [
-      "fxmanifest.lua",
-      "client/openworld.lua",
-      "server/openworld.lua",
-      "locales folder"
+      "shared/config.lua",
+      "client/activities/animalActivities.lua",
+      "server/activities/animalActivities.lua"
   ]
 }
