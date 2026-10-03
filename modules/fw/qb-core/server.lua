@@ -228,6 +228,31 @@ function fw.hasJob(src, job, grade, duty)
     return true
 end
 
+---@param src number | string
+---@param gang string
+---@param grade number? do they require a minimum grade
+---@return boolean
+function fw.hasGang(src, gang, grade)
+    local player = QBCore.Functions.GetPlayer(src)
+    if not player then
+        return false
+    end
+
+    local gangId = player.PlayerData.gang.name
+    if gangId ~= gang then
+        return false
+    end
+
+    if grade then
+        local gradeId = player.PlayerData.gang.grade.level
+        if gradeId < grade then
+            return false
+        end
+    end
+
+    return true
+end
+
 ---@param jobName string
 ---@return number
 function fw.getDutyCountJob(jobName)

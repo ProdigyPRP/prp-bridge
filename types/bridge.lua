@@ -340,6 +340,13 @@ function bridge.fw.getMaxArmor() end
 ---@return boolean
 function bridge.fw.hasJob(src, job, grade, duty) end
 
+---**`server`**
+---@param src number | string
+---@param gang string
+---@param grade number? do they require a minimum grade
+---@return boolean
+function bridge.fw.hasGang(src, gang, grade) end
+
 ---@param jobName string
 ---@return number
 function bridge.fw.getDutyCountJob(jobName) end

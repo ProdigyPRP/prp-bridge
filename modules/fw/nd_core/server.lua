@@ -232,6 +232,32 @@ function fw.hasJob(src, job, grade, duty)
     return true
 end
 
+---@param src number | string
+---@param gang string
+---@param grade number? do they require a minimum grade
+---@return boolean
+function fw.hasGang(src, gang, grade)
+    local player = NDCore:getPlayer(src)
+    if not player then
+        return false
+    end
+
+    local playerGang = player.getGroup(gang)
+
+    if not playerGang then
+        return false
+    end
+
+    if grade then
+        local gradeId = playerGang.rank
+        if gradeId < grade then
+            return false
+        end
+    end
+
+    return true
+end
+
 ---@param jobName string
 ---@return number
 function fw.getDutyCountJob(jobName)
