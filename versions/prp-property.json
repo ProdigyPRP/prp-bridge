@@ -1,25 +1,20 @@
 {
-  "version": "1.0.7",
+  "version": "1.0.9",
   "changes": [
-    "Fixed door upgrade not locking interior doors until a restart, and doors that could not be unlocked afterward",
-    "Fixed property doors staying open after entering a shell home",
-    "Fixed furniture sometimes rotating to the wrong angle after placing it",
-    "Fixed furniture previews getting stuck when switching items quickly in the furnish menu"
+      "Allow custom JSON door fail handling for shells",
+      "Added Config.Features.temperature to disable climate / temp controls"
   ],
   "filesAffected": [
-    "fxmanifest.lua",
-    "config/sh_config.lua",
-    "client/property.lua",
-    "client/doors.lua",
-    "client/events.lua",
-    "client/central/nui.lua",
-    "client/gizmo/nui.lua",
-    "server/callbacks.lua",
-    "server/functions.lua",
-    "server/events.lua",
-    "server/doorlock.lua",
-    "server/shells/instance.lua",
-    "server/interiors/instance.lua",
-    "ui/**"
+      "fxmanifest.lua",
+      "config/sh_config.lua",
+      "client/property.lua",
+      "client/shells/editor/editor.lua",
+      "server/central.lua",
+      "server/utils.lua",
+      "server/shells/editor.lua",
+      "shared/shells_registry.lua",
+      "locales/br.json",
+      "locales/en.json",
+      "locales/sv.json"
   ]
 }
