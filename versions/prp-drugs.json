@@ -1,10 +1,11 @@
 {
-  "version": "1.0.6",
+  "version": "1.0.7",
   "changes": [
-    "Fix joint smoking scenario breaking visibility and vehicle collision when used in a vehicle"
+    "Fix dead crops still being waterable, growing, and harvestable after reaching the death state"
   ],
   "filesAffected": [
     "fxmanifest.lua",
-    "config/client.lua"
+    "server/pots.lua",
+    "client/pots.lua"
   ]
 }
