@@ -1,20 +1,10 @@
 {
-  "version": "1.0.9",
+  "version": "1.0.10",
   "changes": [
-      "Allow custom JSON door fail handling for shells",
-      "Added Config.Features.temperature to disable climate / temp controls"
+    "Add AddFurnitureToProperty server export to drop unplaced placeable_furniture_item into a property for later furnish placement"
   ],
   "filesAffected": [
-      "fxmanifest.lua",
-      "config/sh_config.lua",
-      "client/property.lua",
-      "client/shells/editor/editor.lua",
-      "server/central.lua",
-      "server/utils.lua",
-      "server/shells/editor.lua",
-      "shared/shells_registry.lua",
-      "locales/br.json",
-      "locales/en.json",
-      "locales/sv.json"
+    "fxmanifest.lua",
+    "server/functions.lua"
   ]
 }
