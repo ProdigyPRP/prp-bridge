@@ -1,10 +1,13 @@
 {
-  "version": "1.0.10",
+  "version": "1.0.11",
   "changes": [
-    "Add AddFurnitureToProperty server export to drop unplaced placeable_furniture_item into a property for later furnish placement"
+    "Allow AddFurnitureToProperty custom models via meta.model + meta.category without adding them to the furniture shop",
+    "Keep furniture_data.category when loading property furniture interactions"
   ],
   "filesAffected": [
     "fxmanifest.lua",
-    "server/functions.lua"
+    "server/functions.lua",
+    "client/events.lua",
+    "client/property.lua"
   ]
 }
