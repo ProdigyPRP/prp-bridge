@@ -1,19 +1,12 @@
 {
-  "version": "1.1.0",
+  "version": "1.1.1",
   "changes": [
-    "Add Config.OwnershipLimits to cap total and per-type property ownership (disabled by default)",
-    "Add CanOwnProperty and GetOwnedPropertyCount server exports"
+    "Fix getFreeSlotsCount using resolveStashTemplate so PROPERTY_FURNITURE_* reports 100 slots",
+    "AddFurnitureToProperty falls back to mailbox when furniture storage is full"
   ],
   "filesAffected": [
     "fxmanifest.lua",
-    "config/sh_config.lua",
-    "server/functions.lua",
-    "server/realtor/sale.lua",
-    "server/realtor/api.lua",
-    "server/realtor/bids.lua",
-    "server/admin_commands.lua",
-    "locales/en.json",
-    "locales/br.json",
-    "locales/sv.json"
+    "shared/bridge_adapter.lua",
+    "server/functions.lua"
   ]
 }
