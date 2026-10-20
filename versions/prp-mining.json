@@ -1,10 +1,10 @@
 {
-  "version": "1.1.8",
+  "version": "1.1.9",
   "changes": [
-      "Added client exports for zone blips, sell shop, rentals, progress menu, clean ores, and gem actions"
+      "Block ore trunk limit bypass when swapping items by drag"
   ],
   "filesAffected": [
       "fxmanifest.lua",
-      "client/main.lua"
+      "server/main.lua"
   ]
 }

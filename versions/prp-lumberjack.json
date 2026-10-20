@@ -1,9 +1,10 @@
 {
-  "version": "1.0.2",
+  "version": "1.0.3",
   "changes": [
-      "Pass sell shop coords to prp-bridge so the shop can open"
+      "Block log trunk limit bypass when swapping items by drag"
   ],
   "filesAffected": [
+      "fxmanifest.lua",
       "server/main.lua"
   ]
 }
