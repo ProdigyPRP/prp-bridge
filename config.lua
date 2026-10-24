@@ -84,6 +84,7 @@ BridgeConfig.Medical = 'qbx_medical'
         - core_dispatch
         - kartik-mdt
         - qs-dispatch
+        - p_mdt
 ]]
 ---@type AvailableDispatches
 BridgeConfig.Dispatch = "ps-dispatch"
@@ -101,6 +102,7 @@ BridgeConfig.Dispatch = "ps-dispatch"
         - nd_core
         - mrnewbvehiclekeys
         - Renewed-Vehiclekeys
+        - p_vehiclekeys
 ]]
 ---@type AvailableVehicleKeys
 BridgeConfig.VehicleKeys = "qbx_vehiclekeys"
