@@ -18,6 +18,7 @@ BridgeConfig.Debug = true
         - qb-core
         - es_extended
         - nd_core
+        - sandbox
 ]]
 ---@type AvailableFrameworks
 BridgeConfig.FrameWork = "qbx_core"
