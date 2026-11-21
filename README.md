@@ -24,7 +24,7 @@ BridgeConfig = {
     Debug        = false,  -- enable debug logging
 
     -- Framework selection
-    FrameWork  = "qbx_core",         -- qbx_core | ox_core | qb-core | es_extended | nd_core
+    FrameWork  = "qbx_core",         -- qbx_core | ox_core | qb-core | es_extended | nd_core | sandbox
 
     -- External systems (set any to false to disable that category)
     Inventory   = "ox_inventory",    -- ox_inventory | origen_inventory | tgiann-inventory | false
