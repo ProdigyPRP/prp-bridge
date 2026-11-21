@@ -63,13 +63,27 @@ function fw.getCharacterName(identifier)
     return ("%s %s"):format(first, last)
 end
 
+---@param notifType string
+---@return string
+local function mapNotifyType(notifType)
+    if notifType == "inform" then
+        return "info"
+    end
+    return notifType or "info"
+end
+
 ---@param src number | string
 ---@param type 'inform' | 'error' | 'success'| 'warning'
 ---@param message string
 ---@param title? string
 ---@param duration? number
 function fw.notify(src, type, message, title, duration)
-    TriggerClientEvent("prp-bridge:notify", src, type, message, title, duration)
+    local text = message or ""
+    if title and title ~= "" then
+        text = ("%s: %s"):format(title, text)
+    end
+
+    exports["sandbox-hud"]:Notification(src, mapNotifyType(type), text, duration or 3000)
 end
 
 ---@param commandName string
